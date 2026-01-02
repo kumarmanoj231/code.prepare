@@ -1,0 +1,22 @@
+{
+  "name": "code.prepare",
+  "version": "1.0.0",
+  "description": "A modern full-stack application designed to transform coding interviews and practice sessions. Featuring a VSCode-powered editor, secure code execution, real-time collaboration, and seamless deployment.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarmanoj231/code.prepare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kumarmanoj231/code.prepare/issues"
+  },
+  "homepage": "https://github.com/kumarmanoj231/code.prepare#readme"
+}
