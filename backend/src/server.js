@@ -3,7 +3,6 @@ import path from "path"
 
 import {ENV} from "./lib/env.js"
 import { connectDB } from "./lib/db.js";
-import { error } from "console";
 
 const app = express();
 
@@ -30,8 +29,8 @@ const startServer = async ()=>{
         await connectDB();
         app.listen(ENV.PORT,()=>{
         console.log(`app is listening at PORT : ${ENV.PORT}`);});
-    }catch(error){
-        console.error("❌Error starting the server ",error);
+    }catch(err){
+        console.error("❌Error starting the server ",err);
     }
 };
 
