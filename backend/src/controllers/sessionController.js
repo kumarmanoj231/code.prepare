@@ -145,7 +145,7 @@ export async function endSession(req,res) {
         }
 
         // check session is already completed
-        if(session.status == "completed"){
+        if(session.status === "completed"){
             return res.status(400).json({message: "Session already ended."});
         }
         
