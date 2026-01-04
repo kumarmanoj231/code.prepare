@@ -42,7 +42,7 @@ export async function createSession(req,res) {
 
     } catch (error) {
         console.log("Error in createSession controller:",error.message);
-        req.status(500).json({message: "Internal server error"});
+        res.status(500).json({message: "Internal server error"});
     }
 }
 
@@ -57,7 +57,7 @@ export async function getActiveSessions(_,res) {
 
     } catch (error) {
         console.log("Error in getActiveSessions controller:",error.message);
-        req.status(500).json({message: "Internal server error"});
+        res.status(500).json({message: "Internal server error"});
     }   
 }
 
@@ -74,7 +74,7 @@ export async function getMyRecentSessions(req,res) {
 
     } catch (error) {
        console.log("Error in getMyRecentSessions controller:",error.message);
-        req.status(500).json({message: "Internal server error"}); 
+        res.status(500).json({message: "Internal server error"}); 
     }
 }
 
@@ -92,7 +92,7 @@ export async function getSessionById(req,res) {
 
     } catch (error) {
         console.log("Error in getSessionById controller:",error.message);
-        req.status(500).json({message: "Internal server error"});
+        res.status(500).json({message: "Internal server error"});
     }
 }
 
@@ -106,7 +106,7 @@ export async function joinSession(req,res) {
         if(!session) return res.status(404).json({message: "Session not found"});
         
         // check if room full
-        if(session.participant) return res.status(404).json({message: "Session is full"});
+        if(session.participant) return res.status(400).json({message: "Session is full"});
 
         session.participant = userId;
         await session.save()
@@ -119,7 +119,7 @@ export async function joinSession(req,res) {
 
     } catch (error) {
        console.log("Error in joinSession controller:",error.message);
-        req.status(500).json({message: "Internal server error"}); 
+        res.status(500).json({message: "Internal server error"}); 
     }
 }
 
@@ -151,8 +151,10 @@ export async function endSession(req,res) {
         const channel = chatClient.channel("messaging",session.callId);
         await channel.delete();
 
+        res.status(200).json({message: "Session ended successfully"});
+
     } catch (error) {
         console.log("Error in endSession controller:",error.message);
-        req.status(500).json({message: "Internal server error"}); 
+        res.status(500).json({message: "Internal server error"}); 
     }
 }
