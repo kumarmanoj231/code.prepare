@@ -1,4 +1,4 @@
-# 🚀 Next-Gen Coding Interview Platform  
+# 🚀 Code.prepare : Coding Interview Platform  
 
 A modern full-stack application designed to transform coding interviews and practice sessions. Featuring a VSCode-powered editor, secure code execution, real-time collaboration, and seamless deployment.  
 
@@ -18,7 +18,7 @@ A modern full-stack application designed to transform coding interviews and prac
 - ⚡ **Data Fetching & Caching (TanStack Query)** – Efficient client-side state management  
 - 🤖 **CodeRabbit Integration** – PR analysis & code optimization  
 - 🧑‍💻 **GitHub Workflow** – Branches, PRs, merges streamlined  
-- 🚀 **Deployment on Sevalla** – Free-tier friendly hosting  
+- 🚀 **Deployment on Render** – Free-tier friendly hosting  
 
 ## 🛠 Tech Stack  
 
@@ -27,27 +27,27 @@ A modern full-stack application designed to transform coding interviews and prac
 - **Auth:** Clerk  
 - **Collaboration:** Stream Video & Messaging  
 - **CI/CD & Workflow:** GitHub + CodeRabbit  
-- **Deployment:** Sevalla  
+- **Deployment:** Render  
 
 ## 📦 Installation  
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/kumarmanoj231/code.prepare.git
 
 # Navigate to project folder
-cd your-repo
+cd code.prepare
 
 # Install dependencies
-npm install
+npm run build
 
 # Start development server
-npm run dev
+npm run start
 ```
 
 ## 🚀 Deployment  
 
-This project is optimized for **Sevalla free-tier** deployment. Configure environment variables for Clerk, Stream, and Inngest before deploying.  
+This project is optimized for **Render free-tier** deployment. Configure environment variables for Clerk, Stream, and Inngest before deploying.  
 
 ## 🎯 Tagline  
 
