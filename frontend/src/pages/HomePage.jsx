@@ -7,6 +7,8 @@ import {
   VideoIcon,
   Code2Icon,
   UsersIcon,
+  BadgeCheck,
+  CircleCheck
 } from "lucide-react";
 import { SignInButton } from "@clerk/clerk-react";
 import Logo from "../components/Logo";
@@ -86,16 +88,16 @@ const HomePage = () => {
 
             {/* FEATURE PILLS */}
             <div className="flex flex-wrap gap-3">
-              <div className="badge badge-md badge-outline">
-                <CheckIcon className="size-3 text-success" />
+              <div className="badge badge-lg">
+                <BadgeCheck className="size-5 text-success" />
                 Live Video Chat
               </div>
-              <div className="badge badge-md badge-outline">
-                <CheckIcon className="size-3 text-success" />
+              <div className="badge badge-lg">
+                <BadgeCheck className="size-5 text-success" />
                 Code Editor
               </div>
-              <div className="badge badge-md badge-outline">
-                <CheckIcon className="size-3 text-success" />
+              <div className="badge badge-lg">
+                <BadgeCheck className="size-5 text-success" />
                 Multi-Language
               </div>
             </div>
