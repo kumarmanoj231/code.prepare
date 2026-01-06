@@ -44,8 +44,3 @@ npm run build
 # Start development server
 npm run start
 ```
-
-
-## 🎯 Tagline  
-
-**“Code. Collaborate. Celebrate — the future of coding interviews.”**  
