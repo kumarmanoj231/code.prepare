@@ -45,9 +45,6 @@ npm run build
 npm run start
 ```
 
-## 🚀 Deployment  
-
-This project is optimized for **Render free-tier** deployment. Configure environment variables for Clerk, Stream, and Inngest before deploying.  
 
 ## 🎯 Tagline  
 
