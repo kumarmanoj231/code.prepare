@@ -9,8 +9,7 @@ A modern full-stack application designed to transform coding interviews and prac
 - 🎥 **1-on-1 Video Calls (Stream Video)** – With mic/camera toggle, screen sharing & recording  
 - 💬 **Real-time Chat Messaging (Stream)** – Smooth communication during interviews  
 - 🧭 **Dashboard with Live Stats** – Instant visibility into performance metrics  
-- ⚙️ **Secure Code Execution** – Isolated environment for safe testing  
-- 🎯 **Auto Feedback** – Success/fail based on test cases, with 🎉 confetti on success  
+- ⚙️ **Secure Code Execution** – Isolated environment for safe testing   
 - 🧩 **Practice Problems Page** – Solo coding mode for preparation  
 - 🔒 **Room Locking** – Ensures only 2 participants per interview  
 - 🧠 **Background Jobs (Inngest)** – Async tasks like notifications & analytics  
