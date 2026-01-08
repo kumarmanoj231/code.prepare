@@ -34,9 +34,6 @@ A modern full-stack application designed to transform coding interviews and prac
 # Clone the repo
 git clone https://github.com/kumarmanoj231/code.prepare.git
 
-# Navigate to project folder
-cd code.prepare
-
 # Install dependencies
 npm run build
 
