@@ -6,7 +6,7 @@ import Logo from "./Logo";
 function Navbar() {
   const location = useLocation();
 
-  console.log(location);
+
 
   const isActive = (path) => location.pathname === path;
 
