@@ -19,12 +19,9 @@ function ProblemsPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* HEADER */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2 font-sans text-center">Practice Problems</h1>
-          <p className="text-base-content/70 text-center">
-          <q>
-            <i>Sharpen your coding skills with these curated problems.</i>
-          </q>
-            
+          <h1 className="text-4xl font-bold mb-2">Practice Problems</h1>
+          <p className="text-base-content/70">
+            Sharpen your coding skills with these curated problems
           </p>
         </div>
 
@@ -42,16 +39,16 @@ function ProblemsPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="size-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <Code2Icon className="size-5 text-primary" />
+                        <Code2Icon className="size-6 text-primary" />
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <h2 className="text-lg font-bold">{problem.title}</h2>
+                          <h2 className="text-xl font-bold">{problem.title}</h2>
                           <span className={`badge ${getDifficultyBadgeClass(problem.difficulty)}`}>
                             {problem.difficulty}
                           </span>
                         </div>
-                        <p className="text-sm font-extralight text-base-content/60"> {problem.category}</p>
+                        <p className="text-sm text-base-content/60"> {problem.category}</p>
                       </div>
                     </div>
                     <p className="text-base-content/80 mb-3">{problem.description.text}</p>
@@ -92,7 +89,6 @@ function ProblemsPage() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

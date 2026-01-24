@@ -54,13 +54,8 @@ function CodeEditorPanel({
             fontSize: 16,
             lineNumbers: "on",
             scrollBeyondLastLine: false,
-            scrollbar: {
-    vertical: "visible",
-    horizontal: "visible"
-  },
             automaticLayout: true,
             minimap: { enabled: false },
-
           }}
         />
       </div>
