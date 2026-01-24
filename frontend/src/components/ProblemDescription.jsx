@@ -5,7 +5,7 @@ function ProblemDescription({ problem, currentProblemId, onProblemChange, allPro
       {/* HEADER SECTION */}
       <div className="p-6 bg-base-100 border-b border-base-300">
         <div className="flex items-start justify-between mb-3">
-          <h1 className="text-xl font-bold text-base-content">{problem.title}</h1>
+          <h1 className="text-3xl font-bold text-base-content">{problem.title}</h1>
           <span className={`badge ${getDifficultyBadgeClass(problem.difficulty)}`}>
             {problem.difficulty}
           </span>
@@ -30,8 +30,8 @@ function ProblemDescription({ problem, currentProblemId, onProblemChange, allPro
 
       <div className="p-6 space-y-6">
         {/* PROBLEM DESC */}
-        <div className="bg-base-100 rounded-xl shadow-sm p-4 border border-base-300">
-          <h2 className="text-md font-bold text-base-content">Description</h2>
+        <div className="bg-base-100 rounded-xl shadow-sm p-5 border border-base-300">
+          <h2 className="text-xl font-bold text-base-content">Description</h2>
 
           <div className="space-y-3 text-base leading-relaxed">
             <p className="text-base-content/90">{problem.description.text}</p>
@@ -50,8 +50,8 @@ function ProblemDescription({ problem, currentProblemId, onProblemChange, allPro
             {problem.examples.map((example, idx) => (
               <div key={idx}>
                 <div className="flex items-center gap-2 mb-2">
-                  
-                  <p className="font-semibold text-sm text-base-content">Example {idx + 1}</p>
+                  <span className="badge badge-sm">{idx + 1}</span>
+                  <p className="font-semibold text-base-content">Example {idx + 1}</p>
                 </div>
                 <div className="bg-base-200 rounded-lg p-4 font-mono text-sm space-y-1.5">
                   <div className="flex gap-2">
